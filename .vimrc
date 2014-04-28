@@ -11,14 +11,18 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 Bundle "pangloss/vim-javascript"
-
 Bundle "moll/vim-node"
-
 Bundle "Valloric/YouCompleteMe"
-
 Bundle "othree/html5.vim"
+
+Bundle 'scrooloose/nerdtree'
+nnoremap <silent> <F5> :NERDTree<CR>
+
+Bundle 'vim-scripts/AutoClose'
+Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-powerline' 
+Bundle 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
